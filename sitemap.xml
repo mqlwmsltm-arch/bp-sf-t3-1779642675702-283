@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/about.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/blog.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/posts/field_note-002-ei5r9y.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/posts/interview-001-1odgssv.html</loc>
     <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/posts/review-001-trw5wj.html</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -32,7 +44,7 @@
   </url>
   <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-sf-t3-1779642675702-283/feed.xml</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
