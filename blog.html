@@ -1,391 +1,389 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="midnight-glass">
-    <meta name="bpaas-design-theme" content="kr-midnight-glass">
-    <title>LLM 성능 비교 분석 | SEO 오토파일럿 가격 대비 효과 | 마포 AI 컨설팅</title>
-    <meta name="description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. SEO 오토파일럿 가격 대비 실제 언어 모델 성능, 마포 기반 AI 컨설팅의 데이터 기반 인사이트를 확인하세요. 010-6279-0862 문의.">
-    <meta name="keywords" content="LLM 비교, 언어 모델 성능, SEO 오토파일럿 가격, GPT-4 비교, 클로드 성능, AI 모델 벤치마크, 마포 AI 컨설팅">
-    <link rel="canonical" href="https://sf-t3-1779642675702-283.maphoshirts.xyz/blog.html">
-    <meta property="og:title" content="LLM 성능 비교 분석 | SEO 오토파일럿 가격 대비 효과 | 마포 AI 컨설팅">
-    <meta property="og:description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. SEO 오토파일럿 가격 대비 실제 언어 모델 성능, 마포 기반 AI 컨설팅의 데이터 기반 인사이트를 확인하세요. 010-6279-0862 문의.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sf-t3-1779642675702-283.maphoshirts.xyz/blog.html">
-    <meta property="og:image" content="https://sf-t3-1779642675702-283.vercel.app/og-llm.jpg">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="마포 AI 컨설팅">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="LLM 성능 비교 분석 – SEO 오토파일럿 가격 효용성">
-    <meta name="twitter:description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. 데이터 기반 의사결정으로 비즈니스 효율을 극대화하세요.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0e17;
-            color: #e8eef5;
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-        ::selection {
-            background: #2d4a7a;
-            color: #ffffff;
-        }
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #f0f4fa;
-        }
-        h1 {
-            font-size: 2.4rem;
-            line-height: 1.3;
-            margin-bottom: 1.2rem;
-            background: linear-gradient(135deg, #f0f4fa 0%, #8ab4f8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        h2 {
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid #3b6cb0;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 1.3rem;
-            margin-top: 1.8rem;
-            margin-bottom: 0.8rem;
-            color: #b8cfe8;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            color: #c8d4e3;
-            font-size: 1.05rem;
-        }
-        a {
-            color: #8ab4f8;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #b8d4ff;
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        header {
-            background: rgba(10, 14, 23, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(59, 108, 176, 0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 0.8rem 0;
-        }
-        .header-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #f0f4fa;
-            letter-spacing: -0.03em;
-            background: linear-gradient(135deg, #f0f4fa 0%, #8ab4f8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-        }
-        .logo:hover {
-            opacity: 0.85;
-            text-decoration: none;
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav a {
-            color: #a0b8d0;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-            text-decoration: none;
-        }
-        nav a:hover {
-            color: #f0f4fa;
-            text-decoration: none;
-        }
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #8ab4f8;
-            transition: width 0.3s ease;
-        }
-        nav a:hover::after {
-            width: 100%;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            padding: 0.5rem;
-            background: none;
-            border: none;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 2px;
-            background: #e8eef5;
-            margin: 4px 0;
-            transition: all 0.3s ease;
-            display: block;
-        }
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
-        }
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
-        }
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-            nav {
-                position: fixed;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background: rgba(10, 14, 23, 0.98);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                flex-direction: column;
-                padding: 2rem;
-                gap: 1.5rem;
-                transform: translateY(-120%);
-                transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-                border-bottom: 1px solid rgba(59, 108, 176, 0.2);
-                z-index: 999;
-            }
-            nav.active {
-                transform: translateY(0);
-            }
-            nav a {
-                font-size: 1.1rem;
-                padding: 0.3rem 0;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.4rem;
-            }
-            .container {
-                padding: 0 1rem;
-            }
-        }
-        .tel-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, #1a2d4a 0%, #2d4a7a 100%);
-            color: #f0f4fa;
-            padding: 0.6rem 1.4rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: 1px solid rgba(138, 180, 248, 0.2);
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        .tel-link:hover {
-            background: linear-gradient(135deg, #2d4a7a 0%, #3b6cb0 100%);
-            border-color: rgba(138, 180, 248, 0.5);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 20px rgba(59, 108, 176, 0.3);
-            text-decoration: none;
-            color: #ffffff;
-        }
-        .tel-link::before {
-            content: '📞';
-            font-size: 1rem;
-        }
-        .hero-blog {
-            padding: 3rem 0 1rem 0;
-        }
-        .blog-meta {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            color: #8899b0;
-            font-size: 0.9rem;
-        }
-        .blog-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .blog-meta .date::before {
-            content: '📅';
-        }
-        .blog-meta .author::before {
-            content: '✍️';
-        }
-        .blog-meta .category::before {
-            content: '📂';
-        }
-        .blog-content {
-            background: rgba(20, 28, 45, 0.5);
-            border-radius: 16px;
-            padding: 2.5rem;
-            border: 1px solid rgba(59, 108, 176, 0.1);
-            margin: 1.5rem 0 3rem 0;
-        }
-        .blog-content .highlight-box {
-            background: rgba(59, 108, 176, 0.08);
-            border-left: 4px solid #3b6cb0;
-            padding: 1.5rem 2rem;
-            border-radius: 0 12px 12px 0;
-            margin: 1.5rem 0;
-        }
-        .blog-content .highlight-box p {
-            margin-bottom: 0.5rem;
-        }
-        .blog-content .highlight-box p:last-child {
-            margin-bottom: 0;
-        }
-        .blog-content ul, .blog-content ol {
-            margin: 1rem 0 1.5rem 1.5rem;
-            color: #c8d4e3;
-        }
-        .blog-content li {
-            margin-bottom: 0.6rem;
-            font-size: 1.02rem;
-        }
-        .blog-content strong {
-            color: #f0f4fa;
-        }
-        .blog-content .table-wrap {
-            overflow-x: auto;
-            margin: 1.8rem 0;
-            border-radius: 12px;
-            border: 1px solid rgba(59, 108, 176, 0.15);
-        }
-        .blog-content table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-        .blog-content th {
-            background: rgba(26, 45, 74, 0.8);
-            color: #b8cfe8;
-            padding: 1rem 1.2rem;
-            text-align: left;
-            font-weight: 600;
-            border-bottom: 2px solid rgba(59, 108, 176, 0.3);
-        }
-        .blog-content td {
-            padding: 0.9rem 1.2rem;
-            border-bottom: 1px solid rgba(59, 108, 176, 0.08);
-            color: #c8d4e3;
-        }
-        .blog-content tr:last-child td {
-            border-bottom: none;
-        }
-        .blog-content tr:hover td {
-            background: rgba(59, 108, 176, 0.05);
-        }
-        .cta-section {
-            text-align: center;
-            padding: 3rem 0;
-            border-top: 1px solid rgba(59, 108, 176, 0.15);
-            margin-top: 2rem;
-        }
-        .cta-section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-        }
-        .cta-section p {
-            max-width: 600px;
-            margin: 0 auto 1.8rem auto;
-        }
-        footer {
-            text-align: center;
-            padding: 2.5rem 0;
-            border-top: 1px solid rgba(59, 108, 176, 0.1);
-            color: #6a7a8f;
-            font-size: 0.9rem;
-        }
-        .blog-nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.5rem 0;
-            border-top: 1px solid rgba(59, 108, 176, 0.1);
-            margin-top: 2rem;
-        }
-        .blog-nav a {
-            font-weight: 500;
-        }
-        @media (max-width: 768px) {
-            .blog-content {
-                padding: 1.5rem;
-            }
-            .blog-content table {
-                font-size: 0.85rem;
-            }
-            .blog-content th, .blog-content td {
-                padding: 0.7rem 0.8rem;
-            }
-            .blog-meta {
-                font-size: 0.8rem;
-                gap: 0.8rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>LLM 성능 비교 분석 | SEO 오토파일럿 가격 대비 효과 | 마포 AI 컨설팅</title>
+ <meta name="description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. SEO 오토파일럿 가격 대비 실제 언어 모델 성능, 마포 기반 AI 컨설팅의 데이터 기반 인사이트를 확인하세요.">
+ <meta name="keywords" content="LLM 비교, 언어 모델 성능, SEO 오토파일럿 가격, GPT-4 비교, 클로드 성능, AI 모델 벤치마크, 마포 AI 컨설팅">
+ <link rel="canonical" href="https://sf-t3-1779642675702-283.maphoshirts.xyz/blog.html">
+ <meta property="og:title" content="LLM 성능 비교 분석 | SEO 오토파일럿 가격 대비 효과 | 마포 AI 컨설팅">
+ <meta property="og:description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. SEO 오토파일럿 가격 대비 실제 언어 모델 성능, 마포 기반 AI 컨설팅의 데이터 기반 인사이트를 확인하세요.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sf-t3-1779642675702-283.maphoshirts.xyz/blog.html">
+ <meta property="og:image" content="https://sf-t3-1779642675702-283.vercel.app/og-llm.jpg">
+ <meta property="og:locale" content="ko_KR">
+ <meta property="og:site_name" content="마포 AI 컨설팅">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="LLM 성능 비교 분석 – SEO 오토파일럿 가격 효용성">
+ <meta name="twitter:description" content="2024년 상반기 주요 LLM 성능 비교 분석 결과를 공개합니다. 데이터 기반 의사결정으로 비즈니스 효율을 극대화하세요.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: #0a0e17;
+ color: #e8eef5;
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
+ ::selection {
+ background: #2d4a7a;
+ color: #ffffff;
+ }
+ h1, h2, h3, h4 {
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ color: #f0f4fa;
+ }
+ h1 {
+ font-size: 2.4rem;
+ line-height: 1.3;
+ margin-bottom: 1.2rem;
+ background: linear-gradient(135deg, #f0f4fa 0%, #8ab4f8 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ h2 {
+ font-size: 1.8rem;
+ margin-top: 2.5rem;
+ margin-bottom: 1rem;
+ border-left: 4px solid #3b6cb0;
+ padding-left: 1rem;
+ }
+ h3 {
+ font-size: 1.3rem;
+ margin-top: 1.8rem;
+ margin-bottom: 0.8rem;
+ color: #b8cfe8;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ color: #c8d4e3;
+ font-size: 1.05rem;
+ }
+ a {
+ color: #8ab4f8;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #b8d4ff;
+ text-decoration: underline;
+ }
+ .container {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ }
+ header {
+ background: rgba(10, 14, 23, 0.95);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(59, 108, 176, 0.15);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ padding: 0.8rem 0;
+ }
+ .header-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.4rem;
+ font-weight: 800;
+ color: #f0f4fa;
+ letter-spacing: -0.03em;
+ background: linear-gradient(135deg, #f0f4fa 0%, #8ab4f8 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ }
+ .logo:hover {
+ opacity: 0.85;
+ text-decoration: none;
+ }
+ nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav a {
+ color: #a0b8d0;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ position: relative;
+ text-decoration: none;
+ }
+ nav a:hover {
+ color: #f0f4fa;
+ text-decoration: none;
+ }
+ nav a::after {
+ content: '';
+ position: absolute;
+ bottom: -4px;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: #8ab4f8;
+ transition: width 0.3s ease;
+ }
+ nav a:hover::after {
+ width: 100%;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ padding: 0.5rem;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2px;
+ background: #e8eef5;
+ margin: 4px 0;
+ transition: all 0.3s ease;
+ display: block;
+ }
+ .hamburger.active span:nth-child(1) {
+ transform: rotate(45deg) translate(6px, 6px);
+ }
+ .hamburger.active span:nth-child(2) {
+ opacity: 0;
+ }
+ .hamburger.active span:nth-child(3) {
+ transform: rotate(-45deg) translate(6px, -6px);
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ nav {
+ position: fixed;
+ top: 60px;
+ left: 0;
+ right: 0;
+ background: rgba(10, 14, 23, 0.98);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ flex-direction: column;
+ padding: 2rem;
+ gap: 1.5rem;
+ transform: translateY(-120%);
+ transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+ border-bottom: 1px solid rgba(59, 108, 176, 0.2);
+ z-index: 999;
+ }
+ nav.active {
+ transform: translateY(0);
+ }
+ nav a {
+ font-size: 1.1rem;
+ padding: 0.3rem 0;
+ }
+ h1 {
+ font-size: 1.8rem;
+ }
+ h2 {
+ font-size: 1.4rem;
+ }
+ .container {
+ padding: 0 1rem;
+ }
+ }
+ .tel-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ background: linear-gradient(135deg, #1a2d4a 0%, #2d4a7a 100%);
+ color: #f0f4fa;
+ padding: 0.6rem 1.4rem;
+ border-radius: 50px;
+ font-weight: 600;
+ font-size: 0.95rem;
+ border: 1px solid rgba(138, 180, 248, 0.2);
+ transition: all 0.3s ease;
+ text-decoration: none;
+ }
+ .tel-link:hover {
+ background: linear-gradient(135deg, #2d4a7a 0%, #3b6cb0 100%);
+ border-color: rgba(138, 180, 248, 0.5);
+ transform: translateY(-1px);
+ box-shadow: 0 4px 20px rgba(59, 108, 176, 0.3);
+ text-decoration: none;
+ color: #ffffff;
+ }
+ .tel-link::before {
+ content: '📞';
+ font-size: 1rem;
+ }
+ .hero-blog {
+ padding: 3rem 0 1rem 0;
+ }
+ .blog-meta {
+ display: flex;
+ gap: 1.5rem;
+ align-items: center;
+ margin-bottom: 2rem;
+ flex-wrap: wrap;
+ color: #8899b0;
+ font-size: 0.9rem;
+ }
+ .blog-meta span {
+ display: flex;
+ align-items: center;
+ gap: 0.4rem;
+ }
+ .blog-meta .date::before {
+ content: '📅';
+ }
+ .blog-meta .author::before {
+ content: '✍️';
+ }
+ .blog-meta .category::before {
+ content: '📂';
+ }
+ .blog-content {
+ background: rgba(20, 28, 45, 0.5);
+ border-radius: 16px;
+ padding: 2.5rem;
+ border: 1px solid rgba(59, 108, 176, 0.1);
+ margin: 1.5rem 0 3rem 0;
+ }
+ .blog-content .highlight-box {
+ background: rgba(59, 108, 176, 0.08);
+ border-left: 4px solid #3b6cb0;
+ padding: 1.5rem 2rem;
+ border-radius: 0 12px 12px 0;
+ margin: 1.5rem 0;
+ }
+ .blog-content .highlight-box p {
+ margin-bottom: 0.5rem;
+ }
+ .blog-content .highlight-box p:last-child {
+ margin-bottom: 0;
+ }
+ .blog-content ul, .blog-content ol {
+ margin: 1rem 0 1.5rem 1.5rem;
+ color: #c8d4e3;
+ }
+ .blog-content li {
+ margin-bottom: 0.6rem;
+ font-size: 1.02rem;
+ }
+ .blog-content strong {
+ color: #f0f4fa;
+ }
+ .blog-content .table-wrap {
+ overflow-x: auto;
+ margin: 1.8rem 0;
+ border-radius: 12px;
+ border: 1px solid rgba(59, 108, 176, 0.15);
+ }
+ .blog-content table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.95rem;
+ }
+ .blog-content th {
+ background: rgba(26, 45, 74, 0.8);
+ color: #b8cfe8;
+ padding: 1rem 1.2rem;
+ text-align: left;
+ font-weight: 600;
+ border-bottom: 2px solid rgba(59, 108, 176, 0.3);
+ }
+ .blog-content td {
+ padding: 0.9rem 1.2rem;
+ border-bottom: 1px solid rgba(59, 108, 176, 0.08);
+ color: #c8d4e3;
+ }
+ .blog-content tr:last-child td {
+ border-bottom: none;
+ }
+ .blog-content tr:hover td {
+ background: rgba(59, 108, 176, 0.05);
+ }
+ .cta-section {
+ text-align: center;
+ padding: 3rem 0;
+ border-top: 1px solid rgba(59, 108, 176, 0.15);
+ margin-top: 2rem;
+ }
+ .cta-section h3 {
+ font-size: 1.6rem;
+ margin-bottom: 1rem;
+ }
+ .cta-section p {
+ max-width: 600px;
+ margin: 0 auto 1.8rem auto;
+ }
+ footer {
+ text-align: center;
+ padding: 2.5rem 0;
+ border-top: 1px solid rgba(59, 108, 176, 0.1);
+ color: #6a7a8f;
+ font-size: 0.9rem;
+ }
+ .blog-nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 1.5rem 0;
+ border-top: 1px solid rgba(59, 108, 176, 0.1);
+ margin-top: 2rem;
+ }
+ .blog-nav a {
+ font-weight: 500;
+ }
+ @media (max-width: 768px) {
+ .blog-content {
+ padding: 1.5rem;
+ }
+ .blog-content table {
+ font-size: 0.85rem;
+ }
+ .blog-content th, .blog-content td {
+ padding: 0.7rem 0.8rem;
+ }
+ .blog-meta {
+ font-size: 0.8rem;
+ gap: 0.8rem;
+ }
+ }
+ </style>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="/" class="logo">마포 AI 컨설팅</a>
-            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav id="nav">
-                <a href="/">홈</a>
-                <a href="/blog" style="color:#f0f4fa;font-weight:600;">블로그</a>
-                <a href="/pricing">요금제</a>
-                <a href="/contact">문의</a>
-                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="header-inner">
+ <a href="/" class="logo">마포 AI 컨설팅</a>
+ <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ <nav id="nav">
+ <a href="/">홈</a>
+ <a href="/blog" style="color:#f0f4fa;font-weight:600;">블로그</a>
+ <a href="/pricing">요금제</a>
+ <a href="/contact">문의</a>
+ 
+ </nav>
+ </div>
+ </header>
 
 <main class="container">
 <article>
@@ -434,7 +432,7 @@
 <p><strong>Q. 마포 지역 상담도 가능한가요?</strong><br>A. 전화 문의를 통해 지역 관련 상담 가능 여부를 확인할 수 있다.</p>
 </div>
 <div class="cta-section">
-<p>마포 지역 관련 문의: <a class="tel-link" href="tel:01062790862">01062790862</a></p>
+<p>마포 지역 관련 문의: </p>
 </div>
 <nav class="blog-nav">
 <a href="index.html">홈으로</a>
