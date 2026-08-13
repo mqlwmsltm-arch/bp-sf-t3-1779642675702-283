@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/3) · sf-t3-1779642675702-283</title>
+  <meta name="description" content="sf-t3-1779642675702-283에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-283.maphoshirts.xyz/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+ background: #0a0e1a;
+ color: #e0e4f0;
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
+ ::selection {
+ background: #2a3a6a;
+ color: #ffffff;
+ }
+ h1, h2, h3, h4 {
+ font-weight: 300;
+ letter-spacing: 0.02em;
+ }
+ h1 {
+ font-size: 2.8rem;
+ margin-bottom: 1.2rem;
+ background: linear-gradient(135deg, #c8d6f0 0%, #8899cc 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ h2 {
+ font-size: 2rem;
+ margin: 2.5rem 0 1.2rem;
+ color: #b0c4e8;
+ border-bottom: 1px solid rgba(180, 200, 240, 0.15);
+ padding-bottom: 0.6rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.8rem 0 0.8rem;
+ color: #a0b8e0;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ color: #c8d0e8;
+ }
+ a {
+ color: #7a9fd0;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #aac8f0;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ header {
+ background: rgba(10, 14, 30, 0.92);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(180, 200, 240, 0.08);
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+ height: 70px;
+ }
+ .header-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ }
+ .logo {
+ font-size: 1.3rem;
+ font-weight: 400;
+ color: #c8d6f0;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ transition: opacity 0.3s ease;
+ }
+ .logo:hover {
+ opacity: 0.8;
+ }
+ nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav a {
+ color: #8899bb;
+ font-size: 0.95rem;
+ font-weight: 300;
+ letter-spacing: 0.05em;
+ transition: color 0.3s ease;
+ padding: 0.3rem 0;
+ }
+ nav a:hover {
+ color: #c8d6f0;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ padding: 0.5rem;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2px;
+ background: #8899bb;
+ margin: 4px 0;
+ transition: all 0.3s ease;
+ }
+ .hamburger:hover span {
+ background: #c8d6f0;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ nav {
+ display: none;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ right: 0;
+ background: rgba(10, 14, 30, 0.98);
+ flex-direction: column;
+ padding: 1.5rem 2rem;
+ gap: 1.2rem;
+ border-bottom: 1px solid rgba(180, 200, 240, 0.1);
+ }
+ nav.active {
+ display: flex;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.6rem;
+ }
+ .container {
+ padding: 0 1.2rem;
+ }
+ }
+ .tel-link {
+ display: inline-block;
+ padding: 0.5rem 1.2rem;
+ border: 1px solid rgba(180, 200, 240, 0.25);
+ border-radius: 4px;
+ font-size: 0.9rem;
+ color: #a0b8e0;
+ transition: all 0.3s ease;
+ }
+ .tel-link:hover {
+ border-color: #7a9fd0;
+ color: #c8d6f0;
+ background: rgba(122, 159, 208, 0.08);
+ }
+ main {
+ padding-top: 100px;
+ padding-bottom: 4rem;
+ }
+ .section-card {
+ background: rgba(20, 28, 50, 0.6);
+ border: 1px solid rgba(180, 200, 240, 0.08);
+ border-radius: 12px;
+ padding: 2rem;
+ margin: 1.5rem 0;
+ backdrop-filter: blur(4px);
+ }
+ .section-card h3 {
+ margin-top: 0;
+ }
+ .data-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.5rem;
+ margin: 1.5rem 0;
+ }
+ .data-item {
+ background: rgba(15, 22, 40, 0.8);
+ padding: 1.5rem;
+ border-radius: 8px;
+ border-left: 3px solid #4a6a9a;
+ }
+ .data-item .label {
+ font-size: 0.85rem;
+ color: #7a8aaa;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ margin-bottom: 0.5rem;
+ }
+ .data-item .value {
+ font-size: 1.6rem;
+ font-weight: 300;
+ color: #c8d6f0;
+ }
+ .data-item .sub {
+ font-size: 0.9rem;
+ color: #8899bb;
+ margin-top: 0.3rem;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(180, 200, 240, 0.08);
+ padding: 1.2rem 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-q {
+ font-weight: 400;
+ color: #b0c4e8;
+ margin-bottom: 0.5rem;
+ font-size: 1.05rem;
+ }
+ .faq-a {
+ color: #a0b0c8;
+ font-size: 0.98rem;
+ line-height: 1.7;
+ }
+ footer {
+ border-top: 1px solid rgba(180, 200, 240, 0.06);
+ padding: 2rem 0;
+ text-align: center;
+ color: #5a6a8a;
+ font-size: 0.85rem;
+ }
+ .highlight {
+ color: #aac8f0;
+ font-weight: 400;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (3/3) · sf-t3-1779642675702-283">
+  <meta property="og:description" content="sf-t3-1779642675702-283에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-283.maphoshirts.xyz/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">AI 컨설팅</a>
+ <nav id="main-nav">
+ <a href="/">홈</a>
+ <a href="/pricing">가격</a>
+ <a href="/compare">LLM 비교</a>
+ <a href="/info">정보</a>
+ 
+ </nav>
+ <button class="hamburger" id="hamburger-btn" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 43개 · 3/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-1odgssv.html">SEO 오토파일럿 가격 관련 추천 정보</a>
+        <p class="post-item__summary">최근 기업 마케팅 분야에서 인공지능을 활용한 검색 엔진 최적화 도구가 주목받고 있습니다. 특히 SEO 오토파일럿 가격 정책은 서비스 제공 업체마다 천차만별이기에 도입을 고려한다면 신중한 비교가 필요</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-1sccx02.html">SEO 오토파일럿 가격 관련 추천 정보</a>
+        <p class="post-item__summary">Cherry MX 스위치의 독일 공장과 중국 공장 생산분의 미세한 작동음 차이는 로트 식별법으로 관찰됩니다. 일반론적 해석을 피하고, 실제 맥락과 상황에서 구체적인 맥락을 작성하겠습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-f1al54.html">SEO 오토파일럿 가격 관련 추천 정보</a>
+        <p class="post-item__summary">최근 디지털 마케팅 환경에서 검색 엔진 최적화는 선택이 아닌 필수 요소로 자리 잡았습니다. 특히 마포 지역의 다양한 기업들이 LLM비교를 통해 자사 서비스의 노출을 극대화하려는 노력을 기울이고 있습</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

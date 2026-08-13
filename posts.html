@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/3) · sf-t3-1779642675702-283</title>
+  <meta name="description" content="sf-t3-1779642675702-283에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-283.maphoshirts.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+ background: #0a0e1a;
+ color: #e0e4f0;
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
+ ::selection {
+ background: #2a3a6a;
+ color: #ffffff;
+ }
+ h1, h2, h3, h4 {
+ font-weight: 300;
+ letter-spacing: 0.02em;
+ }
+ h1 {
+ font-size: 2.8rem;
+ margin-bottom: 1.2rem;
+ background: linear-gradient(135deg, #c8d6f0 0%, #8899cc 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ h2 {
+ font-size: 2rem;
+ margin: 2.5rem 0 1.2rem;
+ color: #b0c4e8;
+ border-bottom: 1px solid rgba(180, 200, 240, 0.15);
+ padding-bottom: 0.6rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.8rem 0 0.8rem;
+ color: #a0b8e0;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ color: #c8d0e8;
+ }
+ a {
+ color: #7a9fd0;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #aac8f0;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ header {
+ background: rgba(10, 14, 30, 0.92);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(180, 200, 240, 0.08);
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+ height: 70px;
+ }
+ .header-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ }
+ .logo {
+ font-size: 1.3rem;
+ font-weight: 400;
+ color: #c8d6f0;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ transition: opacity 0.3s ease;
+ }
+ .logo:hover {
+ opacity: 0.8;
+ }
+ nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav a {
+ color: #8899bb;
+ font-size: 0.95rem;
+ font-weight: 300;
+ letter-spacing: 0.05em;
+ transition: color 0.3s ease;
+ padding: 0.3rem 0;
+ }
+ nav a:hover {
+ color: #c8d6f0;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ padding: 0.5rem;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2px;
+ background: #8899bb;
+ margin: 4px 0;
+ transition: all 0.3s ease;
+ }
+ .hamburger:hover span {
+ background: #c8d6f0;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ nav {
+ display: none;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ right: 0;
+ background: rgba(10, 14, 30, 0.98);
+ flex-direction: column;
+ padding: 1.5rem 2rem;
+ gap: 1.2rem;
+ border-bottom: 1px solid rgba(180, 200, 240, 0.1);
+ }
+ nav.active {
+ display: flex;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.6rem;
+ }
+ .container {
+ padding: 0 1.2rem;
+ }
+ }
+ .tel-link {
+ display: inline-block;
+ padding: 0.5rem 1.2rem;
+ border: 1px solid rgba(180, 200, 240, 0.25);
+ border-radius: 4px;
+ font-size: 0.9rem;
+ color: #a0b8e0;
+ transition: all 0.3s ease;
+ }
+ .tel-link:hover {
+ border-color: #7a9fd0;
+ color: #c8d6f0;
+ background: rgba(122, 159, 208, 0.08);
+ }
+ main {
+ padding-top: 100px;
+ padding-bottom: 4rem;
+ }
+ .section-card {
+ background: rgba(20, 28, 50, 0.6);
+ border: 1px solid rgba(180, 200, 240, 0.08);
+ border-radius: 12px;
+ padding: 2rem;
+ margin: 1.5rem 0;
+ backdrop-filter: blur(4px);
+ }
+ .section-card h3 {
+ margin-top: 0;
+ }
+ .data-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.5rem;
+ margin: 1.5rem 0;
+ }
+ .data-item {
+ background: rgba(15, 22, 40, 0.8);
+ padding: 1.5rem;
+ border-radius: 8px;
+ border-left: 3px solid #4a6a9a;
+ }
+ .data-item .label {
+ font-size: 0.85rem;
+ color: #7a8aaa;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ margin-bottom: 0.5rem;
+ }
+ .data-item .value {
+ font-size: 1.6rem;
+ font-weight: 300;
+ color: #c8d6f0;
+ }
+ .data-item .sub {
+ font-size: 0.9rem;
+ color: #8899bb;
+ margin-top: 0.3rem;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(180, 200, 240, 0.08);
+ padding: 1.2rem 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-q {
+ font-weight: 400;
+ color: #b0c4e8;
+ margin-bottom: 0.5rem;
+ font-size: 1.05rem;
+ }
+ .faq-a {
+ color: #a0b0c8;
+ font-size: 0.98rem;
+ line-height: 1.7;
+ }
+ footer {
+ border-top: 1px solid rgba(180, 200, 240, 0.06);
+ padding: 2rem 0;
+ text-align: center;
+ color: #5a6a8a;
+ font-size: 0.85rem;
+ }
+ .highlight {
+ color: #aac8f0;
+ font-weight: 400;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/3) · sf-t3-1779642675702-283">
+  <meta property="og:description" content="sf-t3-1779642675702-283에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-283.maphoshirts.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">AI 컨설팅</a>
+ <nav id="main-nav">
+ <a href="/">홈</a>
+ <a href="/pricing">가격</a>
+ <a href="/compare">LLM 비교</a>
+ <a href="/info">정보</a>
+ 
+ </nav>
+ <button class="hamburger" id="hamburger-btn" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 43개 · 1/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-1t87yiu.html">SEO 오토파일럿 가격 선택 전에 확인할 체크리스트와 실패 사례</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-ei5r9y.html">SEO 오토파일럿 가격</a>
+        <p class="post-item__summary">최근 인공지능 기술의 비약적인 발전으로 검색 엔진 최적화 작업에도 변화의 바람이 불고 있습니다. 마포 지역의 많은 기업이 효율적인 마케팅을 위해 자동화 도구에 관심을 기울이고 있으며 그 중심에는 인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1538.html">SEO 오토파일럿 가격 흐름과 구글 신뢰 지수 모발이식 솔루션 연결 메모</a>
+        <p class="post-item__summary">마포의 SEO 오토파일럿 가격를 비교할 때 가장 피해야 할 것은 한 문장짜리 홍보 문구만 믿는 일입니다. 실제로 도움이 되는 글은 조건을 나누고, 읽는 사람이 스스로 판단할 여지를 남깁니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0550.html">SEO 오토파일럿 가격, 마포 가맹점에 맞는 최적 가이드</a>
+        <p class="post-item__summary">SEO 오토파일럿 가격은 마포 지역의 디지털 마케팅 전략에서 핵심 요소가 되고 있다. 자동화된 키워드 분석과 SERP 추적이 한 번에 제공되면서, 전문적인 운영이 가능해졌다. 그러나 가격은 서비스 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0551.html">SEO 오토파일럿 가격, 합리적인 선택은 어떻게?</a>
+        <p class="post-item__summary">SEO 오토파일럿은 반복적인 최적화 작업을 자동화해주는 도구로, 최근 운영 효율을 고민하는 마케터들 사이에서 꾸준히 관심을 받고 있다. 특히 다양한 가격대의 툴이 등장하면서 기능 대비 비용을 비교하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0552.html">SEO 오토파일럿 가격: 마포의 디지털 마케팅을 변혁하다</a>
+        <p class="post-item__summary">SEO 오토파일럿은 검색엔진 최적화를 자동화해 기업이 비용과 시간을 절약하도록 도와준다. 특히 마포 지역 소상공인이 온라인 가시성을 높이려 할 때, 이 솔루션은 경쟁력 있는 가격대와 강력한 퍼포먼스</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0553.html">SEO 오토파일럿 가격 비교, LLM 선택이 중요한 이유</a>
+        <p class="post-item__summary">SEO 오토파일럿 솔루션의 가격대는 제공하는 LLM 엔진과 기능 범위에 따라 천차만별이다. 마포 지역에서 운영 중인 소규모 사업장이라면 예산 대비 효과를 면밀히 따져볼 필요가 있다. 각 툴이 지원하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0554.html">SEO 오토파일럿 가격, 지금 알아보자</a>
+        <p class="post-item__summary">프로덕트 마케팅에서 자동화는 핵심이다. 특히 SEO 오토파일럿은 키워드 분석과 컨텐츠 최적화를 동시에 수행한다. 다양한 LLM을 활용해 타깃 고객을 직접 정의하고 트래픽을 예측한다. 그 결과, 매출</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0555.html">마포 지역 SEO 오토파일럿 가격, LLM 비교로 접근하다</a>
+        <p class="post-item__summary">SEO 오토파일럿 솔루션을 도입하려는 마포 지역 마케터들이 가장 먼저 확인하는 것은 가격이다. LLM 기반 자동화 도구들이 속속 등장하면서 각 솔루션의 기능 차이와 비용 대비 효과를 비교하는 움직임</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0556.html">SEO 오토파일럿 가격의 비용 구조와 최적화 전략</a>
+        <p class="post-item__summary">SEO 오토파일럿 가격은 마포 지역에서 LLM비교 사업의 핵심 요소이며, 실제 적용 시 잘못된 설정이 비용 상승으로 직결됩니다. 따라서 초기 설정 단계에서 파라미터를 미세 조정하고, 실제 트래픽 패</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0557.html">마포에서 찾은 SEO 오토파일럿 가격, 진짜 비교 포인트는?</a>
+        <p class="post-item__summary">SEO 자동화 도구를 도입하려면 가장 먼저 가격부터 살펴보게 된다. 특히 마포 지역에서 운영 중인 에이전시나 소규모 팀이라면 예산 대비 효과를 꼼꼼히 따질 수밖에 없다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0558.html">SEO 오토파일럿 가격, 비즈니스에 맞는 맞춤형 선택법</a>
+        <p class="post-item__summary">SEO 오토파일럿 가격은 비즈니스 규모와 요구 기능에 따라 다양합니다. 대기업용 기업형 솔루션은 연간 수십만 원, 중소기업용은 수만 원 수준으로 나뉘어지며, 가격은 월별 혹은 프로젝트 단위로 책정됩</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0559.html">마포 지역 업소를 위한 SEO 오토파일럿 가격, LLM 비교로 합리적인 선택하기</a>
+        <p class="post-item__summary">SEO 자동화 도구 시장이 빠르게 성장하면서 다양한 솔루션이 등장하고 있습니다. 특히 마포 지역에서 운영 중인 업소라면 지역 특성에 맞는 SEO 전략이 필요합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0560.html">SEO 오토파일럿 가격, 마포 비즈니스가 선택하는 이유</a>
+        <p class="post-item__summary">SEO 오토파일럿은 검색엔진 최적화 작업을 자동화하여 시간과 비용을 크게 절감해 주는 도구입니다. 최근 마포의 스타트업과 프리랜서 디자이너들 사이에서 인기가 급상승하고 있습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0048.html">SEO 오토파일럿 가격 비교와 마포 럭셔리 단체 가라오케 예약 가이드 실무</a>
+        <p class="post-item__summary">마포 지역에서 품격 있는 모임을 계획할 때 가장 먼저 고려해야 할 요소는 장소의 접근성과 프라이빗한 시설입니다. 검색엔진을 통해 SEO 오토파일럿 가격 등 관련 정보를 확인하는 것처럼, 모임 장소 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0049.html">SEO 오토파일럿 가격 분석을 통한 도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드</a>
+        <p class="post-item__summary">웹사이트를 운영하며 특정 검색 엔진 상단 노출을 위해 자동화 툴을 찾는 이들이 많습니다. 특히 SEO 오토파일럿 가격을 조사하는 과정에서 자칫 잘못된 설정을 적용하면 오히려 사이트 신뢰도가 하락하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0050.html">SEO 오토파일럿 가격 비교와 마포 단체 회식용 대형 룸 노래방 가격 정보 전략</a>
+        <p class="post-item__summary">흔히 대형 룸을 예약할 때 비싼 비용을 치러야만 최고의 서비스를 받을 수 있다고 오해하곤 합니다. 하지만 실제로는 예약 시간대와 인원 구성에 따라 합리적인 선택지가 분명 존재합니다. SEO 오토파일</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0051.html">SEO 오토파일럿 가격 확인 후 진행하는 셔츠룸 예약 및 인원 구성 가이드</a>
+        <p class="post-item__summary">프라이빗한 공간에서 만족스러운 시간을 보내기 위해서는 몇 가지 충족 조건을 사전에 면밀히 살펴야 합니다. 우선 인원 구성에 적합한 룸 사이즈와 서비스 만족도가 최우선적으로 고려되어야 할 요소입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0052.html">SEO 오토파일럿 가격 대비 신뢰할 수 있는 셔츠룸 사이트 업체 비교 기준</a>
+        <p class="post-item__summary">여러분은 수많은 광고 속에서 어떤 기준으로 업체를 선택하고 계십니까? 단순히 검색 결과 상단에 노출된다고 해서 무조건 믿을 수 있는 것은 아니며, 본인만의 명확한 비교 기준을 세우는 것이 중요합니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0053.html">SEO 오토파일럿 가격 기준의 마포 코인노래방 방음 시설 비교 가이드 활용법</a>
+        <p class="post-item__summary">디지털 마케팅 도구의 비용 효율을 분석하는 과정과 오프라인 공간의 품질을 평가하는 일은 의외로 유사한 논리 구조를 가집니다. 특히 SEO 오토파일럿 가격 정보를 살피는 것처럼, 이용자는 서비스의 가</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
